@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:sharedUserId="android.uid.phone" package="com.qualcomm.qti.ims" platformBuildVersionCode="27" platformBuildVersionName="8.1.0">
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <application>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="ImsSettings" android:process="com.android.phone" android:theme="@style/ImsSettingsTheme" android:uiOptions="splitActionBarWhenNarrow">
+            <intent-filter>
+                <action android:name="org.codeaurora.IMS_SETTINGS"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>
